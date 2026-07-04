@@ -1,0 +1,29 @@
+id: parking.disability
+domain: parking-permits
+parent_interaction: "Apply for a disability parking permit"
+tier: 2
+status: built
+requirements:
+  - id: applicant_name
+    label: "Full name of the permit holder"
+    type: text
+    required: true
+  - id: address
+    label: "Residential address"
+    type: address
+    required: true
+  - id: has_medical_certification
+    label: "Do you have current medical certification supporting the application?"
+    type: boolean
+    required: true
+  - id: certification_details
+    label: "Briefly, who provided the certification and when (e.g. GP name and date)?"
+    type: text
+    required: true
+decision_logic:
+  - "Disability parking eligibility is never determined automatically."
+  - "All applications, regardless of certification, -> outcome: staff_review_required"
+outcomes:
+  staff_review_required:
+    message_template: "Thanks — we've recorded your disability parking permit application details. Because eligibility depends on assessing medical certification, a staff member will review this and follow up with you directly rather than us deciding automatically here."
+escalation: "staff_review_medical_eligibility"

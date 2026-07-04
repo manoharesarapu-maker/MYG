@@ -1,0 +1,29 @@
+id: parking.visitor
+domain: parking-permits
+parent_interaction: "Apply for a visitor parking permit"
+tier: 1
+status: built
+requirements:
+  - id: address
+    label: "Property address the visitor permit is for"
+    type: address
+    required: true
+  - id: resident_status
+    label: "Are you the owner or a tenant at this address?"
+    type: enum
+    options: [owner, tenant]
+    required: true
+  - id: permit_days_requested
+    label: "How many days of visitor parking do you need this year?"
+    type: number
+    required: true
+decision_logic:
+  - "Each address is allowed up to 90 visitor permit days per calendar year"
+  - "If permit_days_requested > 90 -> outcome: partial_allocation, reason: annual_cap"
+  - "Otherwise -> outcome: approved_pending_payment"
+outcomes:
+  approved_pending_payment:
+    message_template: "Your visitor parking permit is approved pending payment. It covers the number of days you requested within this calendar year."
+  partial_allocation:
+    message_template: "Visitor permits are capped at 90 days per address per year, so we can only allocate up to that amount this year. You're welcome to request the remainder next calendar year."
+escalation: null

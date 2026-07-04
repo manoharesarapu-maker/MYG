@@ -1,0 +1,36 @@
+id: parking.tradesperson
+domain: parking-permits
+parent_interaction: "Apply for a tradesperson/contractor parking permit"
+tier: 1
+status: built
+requirements:
+  - id: business_name
+    label: "Business or trading name"
+    type: text
+    required: true
+  - id: work_address
+    label: "Address where the work is being carried out"
+    type: address
+    required: true
+  - id: vehicle_rego
+    label: "Work vehicle registration number"
+    type: rego
+    required: true
+  - id: job_start_date
+    label: "Start date of the job at this address"
+    type: date
+    required: true
+  - id: job_duration_days
+    label: "Expected duration of the job, in days"
+    type: number
+    required: true
+decision_logic:
+  - "Tradesperson permits are issued for up to 30 consecutive days per job"
+  - "If job_duration_days > 30 -> outcome: extended_review_required, reason: duration_exceeds_standard_window"
+  - "Otherwise -> outcome: approved_pending_payment"
+outcomes:
+  approved_pending_payment:
+    message_template: "Your tradesperson parking permit is approved pending payment, covering the job's expected duration at this address."
+  extended_review_required:
+    message_template: "Jobs longer than 30 days need a short staff review before we can issue the permit, since it goes beyond the standard tradesperson window."
+escalation: null

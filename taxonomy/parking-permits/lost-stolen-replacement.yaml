@@ -1,0 +1,30 @@
+id: parking.lost-stolen-replacement
+domain: parking-permits
+parent_interaction: "Request a replacement for a lost or stolen parking permit"
+tier: 1
+status: built
+requirements:
+  - id: existing_permit_number
+    label: "Existing permit number, if known"
+    type: text
+    required: false
+  - id: address
+    label: "Address the original permit was issued for"
+    type: address
+    required: true
+  - id: vehicle_rego
+    label: "Vehicle registration number on the original permit"
+    type: rego
+    required: true
+  - id: circumstance
+    label: "Was the permit lost or stolen?"
+    type: enum
+    options: [lost, stolen]
+    required: true
+decision_logic:
+  - "If circumstance is stolen -> outcome: approved_pending_payment, note: a police report reference is recommended but not required to proceed"
+  - "If circumstance is lost -> outcome: approved_pending_payment"
+outcomes:
+  approved_pending_payment:
+    message_template: "Your replacement permit request is approved pending payment of the replacement fee. Your original permit will be deactivated once the replacement is issued."
+escalation: null

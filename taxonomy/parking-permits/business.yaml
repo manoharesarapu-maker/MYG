@@ -1,0 +1,32 @@
+id: parking.business
+domain: parking-permits
+parent_interaction: "Apply for a business parking permit"
+tier: 1
+status: built
+requirements:
+  - id: business_name
+    label: "Business or trading name"
+    type: text
+    required: true
+  - id: business_address
+    label: "Business address"
+    type: address
+    required: true
+  - id: vehicle_rego
+    label: "Vehicle registration number"
+    type: rego
+    required: true
+  - id: existing_business_permits
+    label: "How many business parking permits does this business already hold?"
+    type: number
+    required: true
+decision_logic:
+  - "Max 4 business permits per registered business address"
+  - "If existing_business_permits >= 4 -> outcome: declined, reason: cap_reached"
+  - "Otherwise -> outcome: approved_pending_payment"
+outcomes:
+  approved_pending_payment:
+    message_template: "Your business parking permit application is approved pending payment of the annual fee."
+  declined:
+    message_template: "This business address has already reached its permit limit of 4. You can request a staff review if you believe additional permits are warranted."
+escalation: null

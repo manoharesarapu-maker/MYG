@@ -1,0 +1,31 @@
+id: parking.resident.renewal
+domain: parking-permits
+parent_interaction: "Renew an existing resident parking permit"
+tier: 1
+status: built
+requirements:
+  - id: existing_permit_number
+    label: "Existing permit number"
+    type: text
+    required: true
+  - id: address
+    label: "Property address on the existing permit"
+    type: address
+    required: true
+  - id: vehicle_rego
+    label: "Vehicle registration number on the existing permit"
+    type: rego
+    required: true
+  - id: address_unchanged
+    label: "Is the vehicle still registered at this same address?"
+    type: boolean
+    required: true
+decision_logic:
+  - "If address_unchanged is false -> outcome: requires_new_application, reason: address_changed"
+  - "Otherwise -> outcome: renewed_pending_payment"
+outcomes:
+  renewed_pending_payment:
+    message_template: "Your resident parking permit renewal is approved pending payment of the annual fee. Your existing permit stays valid until payment is confirmed and the new permit is issued."
+  requires_new_application:
+    message_template: "Since your address has changed, this needs to be handled as a new resident permit application rather than a renewal."
+escalation: null

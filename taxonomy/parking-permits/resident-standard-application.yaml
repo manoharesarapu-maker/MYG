@@ -1,0 +1,38 @@
+id: parking.resident.standard-application
+domain: parking-permits
+parent_interaction: "Apply for a resident parking permit"
+tier: 1
+status: built
+requirements:
+  - id: address
+    label: "Property address"
+    type: address
+    required: true
+  - id: vehicle_rego
+    label: "Vehicle registration number"
+    type: rego
+    required: true
+  - id: resident_status
+    label: "Are you the owner or a tenant at this address?"
+    type: enum
+    options: [owner, tenant]
+    required: true
+  - id: existing_permits
+    label: "How many resident parking permits are already registered at this address?"
+    type: number
+    required: true
+  - id: off_street_parking
+    label: "Does the dwelling have any off-street parking available (a driveway or garage)?"
+    type: boolean
+    required: true
+decision_logic:
+  - "Max 2 resident permits per address if off_street_parking is true"
+  - "Max 3 resident permits per address if off_street_parking is false (no off-street parking)"
+  - "If existing_permits >= max allowed for the address -> outcome: declined, reason: cap_reached"
+  - "Otherwise -> outcome: approved_pending_payment"
+outcomes:
+  approved_pending_payment:
+    message_template: "Your resident parking permit application is approved pending payment of the annual fee. You'll receive a payment link and your permit will be active once payment is confirmed."
+  declined:
+    message_template: "This address has already reached its resident permit limit, so we can't issue a new permit right now. If your circumstances have changed, you can request a staff review."
+escalation: null
