@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import AppHeader from "@/components/AppHeader";
+import LoginGate from "@/components/LoginGate";
 import { GuideBand } from "@/components/GuideBand";
 import { ValidatorBand } from "@/components/ValidatorBand";
 import { PlusBand } from "@/components/PlusBand";
@@ -24,7 +26,7 @@ export default function HowItWorksPage() {
     setStreaming(true);
 
     try {
-      const res = await fetch("/api/guide-chat", {
+      const res = await fetch("/api/how-it-works-chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: text }),
@@ -56,69 +58,72 @@ export default function HowItWorksPage() {
   }
 
   return (
-    <>
-      <div className="disclaimer-banner">
-        This is a team working-session visualization of the MyGuide product shape — not a
-        production build, not a stakeholder pitch, and not a reference architecture. Parking
-        content shown here is placeholder/illustrative, not the real ruleset.
-      </div>
+    <LoginGate>
+      <div className="app-shell">
+        <AppHeader />
+        <div className="disclaimer-banner">
+          This is a team working-session visualization of the MyGuide product shape — not a
+          production build, not a stakeholder pitch, and not a reference architecture. Parking
+          content shown here is placeholder/illustrative, not the real ruleset.
+        </div>
 
-      <main className="page">
-        <h1>How MyGuide works</h1>
-        <p className="page-intro">
-          One citizen request, three layers. Watch it move from Guide to Validator; Plus is shown
-          for context only.
-        </p>
+        <main className="page">
+          <h1>How MyGuide works</h1>
+          <p className="page-intro">
+            One citizen request, three layers. Watch it move from Guide to Validator; Plus is
+            shown for context only.
+          </p>
 
-        <div className="input-panel">
-          <div className="preset-row">
-            {PLACEHOLDER_PARKING_CASES.map((c) => (
-              <button
-                key={c.id}
-                type="button"
-                className="preset-button"
-                onClick={() => sendToGuide(c.citizenPrompt)}
+          <div className="input-panel">
+            <div className="preset-row">
+              {PLACEHOLDER_PARKING_CASES.map((c) => (
+                <button
+                  key={c.id}
+                  type="button"
+                  className="preset-button"
+                  onClick={() => sendToGuide(c.citizenPrompt)}
+                  disabled={streaming}
+                >
+                  {c.label}
+                </button>
+              ))}
+            </div>
+            <form
+              className="input-row"
+              onSubmit={(e) => {
+                e.preventDefault();
+                sendToGuide(input);
+              }}
+            >
+              <input
+                type="text"
+                value={input}
+                placeholder="Type a citizen request, e.g. I want to appeal a parking fine…"
+                onChange={(e) => setInput(e.target.value)}
                 disabled={streaming}
-              >
-                {c.label}
+              />
+              <button type="submit" disabled={streaming || !input.trim()}>
+                {streaming ? "Sending…" : "Send to Guide"}
               </button>
-            ))}
+            </form>
+            {error && <p className="eligible-no">{error}</p>}
           </div>
-          <form
-            className="input-row"
-            onSubmit={(e) => {
-              e.preventDefault();
-              sendToGuide(input);
-            }}
-          >
-            <input
-              type="text"
-              value={input}
-              placeholder="Type a citizen request, e.g. I want to appeal a parking fine…"
-              onChange={(e) => setInput(e.target.value)}
-              disabled={streaming}
-            />
-            <button type="submit" disabled={streaming || !input.trim()}>
-              {streaming ? "Sending…" : "Send to Guide"}
-            </button>
-          </form>
-          {error && <p className="eligible-no">{error}</p>}
-        </div>
 
-        <GuideBand response={guideResponse} streaming={streaming} />
+          <GuideBand response={guideResponse} streaming={streaming} />
 
-        <div className="transition-arrow" aria-hidden>
-          ↓
-        </div>
+          <div className="transition-arrow" aria-hidden>
+            ↓
+          </div>
 
-        <ValidatorBand matchedCase={matchedCase} />
+          <ValidatorBand matchedCase={matchedCase} />
 
-        <div className="transition-arrow" aria-hidden>
-          ↓
-        </div>
+          <div className="transition-arrow" aria-hidden>
+            ↓
+          </div>
 
-        <PlusBand />
-      </main>
-    </>
+          <PlusBand />
+        </main>
+      </div>
+    </LoginGate>
   );
 }

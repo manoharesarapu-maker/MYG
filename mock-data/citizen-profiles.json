@@ -1,0 +1,28 @@
+{
+  "profiles": [
+    {
+      "id": "citizen-001",
+      "name": "Priya Nandan",
+      "address": "14 Esplanade, Bayside Harbour",
+      "residentStatus": "owner",
+      "existingVehicleRego": "1HB2AA",
+      "existingPermits": 1
+    },
+    {
+      "id": "citizen-002",
+      "name": "Marcus Webb",
+      "address": "88 Foreshore Road, Bayside Harbour",
+      "residentStatus": "tenant",
+      "existingVehicleRego": "9KT4ZZ",
+      "existingPermits": 2
+    },
+    {
+      "id": "citizen-003",
+      "name": "Amelia Chen",
+      "address": "3/21 Harbour Street, Bayside Harbour",
+      "residentStatus": "owner",
+      "existingVehicleRego": "BAY123",
+      "existingPermits": 0
+    }
+  ]
+}

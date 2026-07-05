@@ -1,0 +1,324 @@
+# A representative sample of branch-level stubs across the 16 non-parking
+# domains, for the taxonomy explorer to show real-looking entries under
+# each domain without authoring all 1,351 of them for this demo.
+branches:
+  - id: waste-and-recycling.stub.report-a-missed-bin-collection
+    domain: waste-and-recycling
+    parent_interaction: "Report a missed bin collection"
+    tier: 1
+    status: stub
+  - id: waste-and-recycling.stub.request-a-new-or-replacement-bin
+    domain: waste-and-recycling
+    parent_interaction: "Request a new or replacement bin"
+    tier: 1
+    status: stub
+  - id: waste-and-recycling.stub.book-a-hard-rubbish-collection
+    domain: waste-and-recycling
+    parent_interaction: "Book a hard rubbish collection"
+    tier: 1
+    status: stub
+  - id: waste-and-recycling.stub.report-illegal-dumping
+    domain: waste-and-recycling
+    parent_interaction: "Report illegal dumping"
+    tier: 1
+    status: stub
+  - id: rates-and-property.stub.request-a-rates-payment-plan
+    domain: rates-and-property
+    parent_interaction: "Request a rates payment plan"
+    tier: 1
+    status: stub
+  - id: rates-and-property.stub.apply-for-a-pensioner-rates-rebate
+    domain: rates-and-property
+    parent_interaction: "Apply for a pensioner rates rebate"
+    tier: 1
+    status: stub
+  - id: rates-and-property.stub.request-a-property-valuation-review
+    domain: rates-and-property
+    parent_interaction: "Request a property valuation review"
+    tier: 1
+    status: stub
+  - id: rates-and-property.stub.update-property-ownership-details
+    domain: rates-and-property
+    parent_interaction: "Update property ownership details"
+    tier: 1
+    status: stub
+  - id: building-and-planning.stub.apply-for-a-building-permit
+    domain: building-and-planning
+    parent_interaction: "Apply for a building permit"
+    tier: 1
+    status: stub
+  - id: building-and-planning.stub.lodge-a-planning-permit-application
+    domain: building-and-planning
+    parent_interaction: "Lodge a planning permit application"
+    tier: 1
+    status: stub
+  - id: building-and-planning.stub.request-a-planning-pre-application-meeting
+    domain: building-and-planning
+    parent_interaction: "Request a planning pre-application meeting"
+    tier: 1
+    status: stub
+  - id: building-and-planning.stub.object-to-a-neighbouring-planning-application
+    domain: building-and-planning
+    parent_interaction: "Object to a neighbouring planning application"
+    tier: 1
+    status: stub
+  - id: animal-management.stub.register-a-dog-or-cat
+    domain: animal-management
+    parent_interaction: "Register a dog or cat"
+    tier: 1
+    status: stub
+  - id: animal-management.stub.report-a-barking-dog-complaint
+    domain: animal-management
+    parent_interaction: "Report a barking dog complaint"
+    tier: 1
+    status: stub
+  - id: animal-management.stub.apply-for-a-dangerous-dog-exemption
+    domain: animal-management
+    parent_interaction: "Apply for a dangerous dog exemption"
+    tier: 1
+    status: stub
+  - id: animal-management.stub.report-a-lost-or-found-pet
+    domain: animal-management
+    parent_interaction: "Report a lost or found pet"
+    tier: 1
+    status: stub
+  - id: local-laws-and-compliance.stub.report-an-abandoned-vehicle
+    domain: local-laws-and-compliance
+    parent_interaction: "Report an abandoned vehicle"
+    tier: 1
+    status: stub
+  - id: local-laws-and-compliance.stub.apply-for-a-footpath-trading-permit
+    domain: local-laws-and-compliance
+    parent_interaction: "Apply for a footpath trading permit"
+    tier: 1
+    status: stub
+  - id: local-laws-and-compliance.stub.report-a-noise-complaint
+    domain: local-laws-and-compliance
+    parent_interaction: "Report a noise complaint"
+    tier: 1
+    status: stub
+  - id: local-laws-and-compliance.stub.apply-for-an-a-frame-sign
+    domain: local-laws-and-compliance
+    parent_interaction: "Apply for an A-frame sign permit"
+    tier: 1
+    status: stub
+  - id: community-grants-and-funding.stub.apply-for-a-community-grant
+    domain: community-grants-and-funding
+    parent_interaction: "Apply for a community grant"
+    tier: 1
+    status: stub
+  - id: community-grants-and-funding.stub.apply-for-arts-and-culture-funding
+    domain: community-grants-and-funding
+    parent_interaction: "Apply for arts and culture funding"
+    tier: 1
+    status: stub
+  - id: community-grants-and-funding.stub.request-sponsorship-for-a-local-event
+    domain: community-grants-and-funding
+    parent_interaction: "Request sponsorship for a local event"
+    tier: 1
+    status: stub
+  - id: community-grants-and-funding.stub.report-grant-acquittal-issues
+    domain: community-grants-and-funding
+    parent_interaction: "Report grant acquittal issues"
+    tier: 1
+    status: stub
+  - id: libraries-and-learning.stub.register-for-a-library-card
+    domain: libraries-and-learning
+    parent_interaction: "Register for a library card"
+    tier: 1
+    status: stub
+  - id: libraries-and-learning.stub.report-a-lost-library-item
+    domain: libraries-and-learning
+    parent_interaction: "Report a lost library item"
+    tier: 1
+    status: stub
+  - id: libraries-and-learning.stub.book-a-library-meeting-room
+    domain: libraries-and-learning
+    parent_interaction: "Book a library meeting room"
+    tier: 1
+    status: stub
+  - id: libraries-and-learning.stub.request-an-interlibrary-loan
+    domain: libraries-and-learning
+    parent_interaction: "Request an interlibrary loan"
+    tier: 1
+    status: stub
+  - id: aged-and-disability-services.stub.request-a-home-care-assessment
+    domain: aged-and-disability-services
+    parent_interaction: "Request a home care assessment"
+    tier: 1
+    status: stub
+  - id: aged-and-disability-services.stub.apply-for-a-companion-card-parking
+    domain: aged-and-disability-services
+    parent_interaction: "Apply for a companion card parking accommodation"
+    tier: 1
+    status: stub
+  - id: aged-and-disability-services.stub.request-meals-on-wheels-service
+    domain: aged-and-disability-services
+    parent_interaction: "Request meals-on-wheels service"
+    tier: 1
+    status: stub
+  - id: aged-and-disability-services.stub.report-a-concern-about-an-aged
+    domain: aged-and-disability-services
+    parent_interaction: "Report a concern about an aged care service"
+    tier: 1
+    status: stub
+  - id: family-and-childrens-services.stub.apply-for-kindergarten-enrolment
+    domain: family-and-childrens-services
+    parent_interaction: "Apply for kindergarten enrolment"
+    tier: 1
+    status: stub
+  - id: family-and-childrens-services.stub.request-maternal-and-child-health-service
+    domain: family-and-childrens-services
+    parent_interaction: "Request maternal and child health service"
+    tier: 1
+    status: stub
+  - id: family-and-childrens-services.stub.apply-for-childcare-fee-assistance
+    domain: family-and-childrens-services
+    parent_interaction: "Apply for childcare fee assistance"
+    tier: 1
+    status: stub
+  - id: family-and-childrens-services.stub.report-a-concern-about-a-child
+    domain: family-and-childrens-services
+    parent_interaction: "Report a concern about a child's safety"
+    tier: 1
+    status: stub
+  - id: roads-and-footpaths.stub.report-a-pothole
+    domain: roads-and-footpaths
+    parent_interaction: "Report a pothole"
+    tier: 1
+    status: stub
+  - id: roads-and-footpaths.stub.request-a-footpath-repair
+    domain: roads-and-footpaths
+    parent_interaction: "Request a footpath repair"
+    tier: 1
+    status: stub
+  - id: roads-and-footpaths.stub.apply-for-a-vehicle-crossing-permit
+    domain: roads-and-footpaths
+    parent_interaction: "Apply for a vehicle crossing permit"
+    tier: 1
+    status: stub
+  - id: roads-and-footpaths.stub.report-a-damaged-street-sign
+    domain: roads-and-footpaths
+    parent_interaction: "Report a damaged street sign"
+    tier: 1
+    status: stub
+  - id: environmental-health.stub.register-a-food-business
+    domain: environmental-health
+    parent_interaction: "Register a food business"
+    tier: 1
+    status: stub
+  - id: environmental-health.stub.report-a-food-safety-concern
+    domain: environmental-health
+    parent_interaction: "Report a food safety concern"
+    tier: 1
+    status: stub
+  - id: environmental-health.stub.apply-for-an-immunisation-record
+    domain: environmental-health
+    parent_interaction: "Apply for an immunisation record"
+    tier: 1
+    status: stub
+  - id: environmental-health.stub.report-a-mosquito-vermin-concern
+    domain: environmental-health
+    parent_interaction: "Report a mosquito/vermin concern"
+    tier: 1
+    status: stub
+  - id: events-and-venue-bookings.stub.book-a-community-hall
+    domain: events-and-venue-bookings
+    parent_interaction: "Book a community hall"
+    tier: 1
+    status: stub
+  - id: events-and-venue-bookings.stub.apply-for-a-street-event-permit
+    domain: events-and-venue-bookings
+    parent_interaction: "Apply for a street event permit"
+    tier: 1
+    status: stub
+  - id: events-and-venue-bookings.stub.apply-for-a-busking-permit
+    domain: events-and-venue-bookings
+    parent_interaction: "Apply for a busking permit"
+    tier: 1
+    status: stub
+  - id: events-and-venue-bookings.stub.request-event-traffic-management
+    domain: events-and-venue-bookings
+    parent_interaction: "Request event traffic management"
+    tier: 1
+    status: stub
+  - id: financial-hardship-and-concessions.stub.request-rates-hardship-consideration
+    domain: financial-hardship-and-concessions
+    parent_interaction: "Request rates hardship consideration"
+    tier: 1
+    status: stub
+  - id: financial-hardship-and-concessions.stub.apply-for-a-utility-relief-grant
+    domain: financial-hardship-and-concessions
+    parent_interaction: "Apply for a utility relief grant referral"
+    tier: 1
+    status: stub
+  - id: financial-hardship-and-concessions.stub.request-a-payment-extension-due-to
+    domain: financial-hardship-and-concessions
+    parent_interaction: "Request a payment extension due to hardship"
+    tier: 1
+    status: stub
+  - id: financial-hardship-and-concessions.stub.apply-for-a-concession-on-a
+    domain: financial-hardship-and-concessions
+    parent_interaction: "Apply for a concession on a council service fee"
+    tier: 1
+    status: stub
+  - id: trees-and-nature-strips.stub.report-a-fallen-tree-branch
+    domain: trees-and-nature-strips
+    parent_interaction: "Report a fallen tree branch"
+    tier: 1
+    status: stub
+  - id: trees-and-nature-strips.stub.request-a-street-tree-removal-assessment
+    domain: trees-and-nature-strips
+    parent_interaction: "Request a street tree removal assessment"
+    tier: 1
+    status: stub
+  - id: trees-and-nature-strips.stub.apply-for-a-nature-strip-garden
+    domain: trees-and-nature-strips
+    parent_interaction: "Apply for a nature strip garden permit"
+    tier: 1
+    status: stub
+  - id: trees-and-nature-strips.stub.report-root-damage-to-a-footpath
+    domain: trees-and-nature-strips
+    parent_interaction: "Report root damage to a footpath"
+    tier: 1
+    status: stub
+  - id: hard-rubbish-and-bin-requests.stub.book-an-additional-hard-rubbish-collection
+    domain: hard-rubbish-and-bin-requests
+    parent_interaction: "Book an additional hard rubbish collection"
+    tier: 1
+    status: stub
+  - id: hard-rubbish-and-bin-requests.stub.request-a-larger-bin-size
+    domain: hard-rubbish-and-bin-requests
+    parent_interaction: "Request a larger bin size"
+    tier: 1
+    status: stub
+  - id: hard-rubbish-and-bin-requests.stub.report-a-damaged-bin
+    domain: hard-rubbish-and-bin-requests
+    parent_interaction: "Report a damaged bin"
+    tier: 1
+    status: stub
+  - id: hard-rubbish-and-bin-requests.stub.request-a-shared-bin-arrangement-for
+    domain: hard-rubbish-and-bin-requests
+    parent_interaction: "Request a shared bin arrangement for a multi-unit property"
+    tier: 1
+    status: stub
+  - id: customer-feedback-and-complaints.stub.lodge-a-general-complaint
+    domain: customer-feedback-and-complaints
+    parent_interaction: "Lodge a general complaint"
+    tier: 1
+    status: stub
+  - id: customer-feedback-and-complaints.stub.provide-compliments-feedback-about-a-service
+    domain: customer-feedback-and-complaints
+    parent_interaction: "Provide compliments/feedback about a service"
+    tier: 1
+    status: stub
+  - id: customer-feedback-and-complaints.stub.escalate-an-unresolved-complaint
+    domain: customer-feedback-and-complaints
+    parent_interaction: "Escalate an unresolved complaint"
+    tier: 1
+    status: stub
+  - id: customer-feedback-and-complaints.stub.request-a-formal-complaint-outcome-review
+    domain: customer-feedback-and-complaints
+    parent_interaction: "Request a formal complaint outcome review"
+    tier: 1
+    status: stub

@@ -1,0 +1,220 @@
+# Remaining parking permit branches not yet fully authored for this demo.
+# Each entry is metadata-only (status: stub) so the taxonomy explorer can
+# show the full 53-branch scope of the parking permits domain while only
+# the 10 branches in ../*.yaml have real decision logic implemented.
+branches:
+  - id: parking.stub.apply-for-a-temporary-no-parking
+    domain: parking-permits
+    parent_interaction: "Apply for a temporary no-parking zone (works/removalist)"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-disabled-bay-outside-a
+    domain: parking-permits
+    parent_interaction: "Request a disabled bay outside a private residence"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-car-share-scheme
+    domain: parking-permits
+    parent_interaction: "Apply for a car share scheme bay permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-taxi-rideshare-rank
+    domain: parking-permits
+    parent_interaction: "Apply for a taxi/rideshare rank permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-loading-zone-time-extension
+    domain: parking-permits
+    parent_interaction: "Request a loading zone time extension"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-motorcycle-parking-permit
+    domain: parking-permits
+    parent_interaction: "Apply for a motorcycle parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-boat-trailer-parking
+    domain: parking-permits
+    parent_interaction: "Apply for a boat trailer parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-an-exemption-for-an-oversized
+    domain: parking-permits
+    parent_interaction: "Request an exemption for an oversized vehicle"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-caravan-rv-overnight
+    domain: parking-permits
+    parent_interaction: "Apply for a caravan/RV overnight parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.report-incorrect-signage-affecting-a-permit
+    domain: parking-permits
+    parent_interaction: "Report incorrect signage affecting a permit zone"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-refund-for-an-unused
+    domain: parking-permits
+    parent_interaction: "Request a refund for an unused parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.transfer-a-resident-permit-to-a
+    domain: parking-permits
+    parent_interaction: "Transfer a resident permit to a new address"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-shared-driveway-parking
+    domain: parking-permits
+    parent_interaction: "Apply for a shared driveway parking arrangement"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-permit-for-a-second
+    domain: parking-permits
+    parent_interaction: "Request a permit for a second vehicle at a resident address"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-an-aged-care-provider
+    domain: parking-permits
+    parent_interaction: "Apply for an aged care provider parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-childcare-drop-off
+    domain: parking-permits
+    parent_interaction: "Apply for a childcare drop-off zone permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-temporary-permit-during-kerbside
+    domain: parking-permits
+    parent_interaction: "Request a temporary permit during kerbside works"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-health-community-services
+    domain: parking-permits
+    parent_interaction: "Apply for a health/community services worker permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-permit-fee-instalment-plan
+    domain: parking-permits
+    parent_interaction: "Request a permit fee instalment plan"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-real-estate-open
+    domain: parking-permits
+    parent_interaction: "Apply for a real estate open-for-inspection sign permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-film-photography-shoot
+    domain: parking-permits
+    parent_interaction: "Apply for a film/photography shoot parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-permit-for-a-heritage
+    domain: parking-permits
+    parent_interaction: "Request a permit for a heritage-listed property with no off-street access"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-an-electric-vehicle-charging
+    domain: parking-permits
+    parent_interaction: "Apply for an electric vehicle charging bay exemption"
+    tier: 1
+    status: stub
+  - id: parking.stub.report-a-suspected-fraudulent-parking-permit
+    domain: parking-permits
+    parent_interaction: "Report a suspected fraudulent parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-duplicate-permit-sticker-undamaged
+    domain: parking-permits
+    parent_interaction: "Request a duplicate permit sticker (undamaged, for a second vehicle window)"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-market-stallholder-parking
+    domain: parking-permits
+    parent_interaction: "Apply for a market stallholder parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-permit-boundary-review-street
+    domain: parking-permits
+    parent_interaction: "Request a permit boundary review (street zone dispute)"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-funeral-procession-parking
+    domain: parking-permits
+    parent_interaction: "Apply for a funeral procession parking accommodation"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-religious-institution-visitor
+    domain: parking-permits
+    parent_interaction: "Apply for a religious institution visitor parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-school-zone-staff-parking
+    domain: parking-permits
+    parent_interaction: "Request a school zone staff parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-ndis-support-worker
+    domain: parking-permits
+    parent_interaction: "Apply for a NDIS support worker parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-an-extension-to-a-tradesperson
+    domain: parking-permits
+    parent_interaction: "Request an extension to a tradesperson permit beyond 30 days"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-house-move-removalist
+    domain: parking-permits
+    parent_interaction: "Apply for a house-move/removalist truck permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-cancellation-of-an-active-parking
+    domain: parking-permits
+    parent_interaction: "Request cancellation of an active parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-skip-bin-placement
+    domain: parking-permits
+    parent_interaction: "Apply for a skip bin placement permit affecting parking"
+    tier: 1
+    status: stub
+  - id: parking.stub.report-a-permit-sticker-that-failed
+    domain: parking-permits
+    parent_interaction: "Report a permit sticker that failed to arrive"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-scaffolding-hoarding-permit
+    domain: parking-permits
+    parent_interaction: "Apply for a scaffolding/hoarding permit affecting street parking"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-concession-rate-on-a
+    domain: parking-permits
+    parent_interaction: "Request a concession rate on a parking permit (non-hardship, e.g. pensioner concession card)"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-community-group-event
+    domain: parking-permits
+    parent_interaction: "Apply for a community group event parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-a-foster-carer-parking
+    domain: parking-permits
+    parent_interaction: "Apply for a foster carer parking permit"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-permit-merge-after-a
+    domain: parking-permits
+    parent_interaction: "Request a permit merge after a property subdivision change"
+    tier: 1
+    status: stub
+  - id: parking.stub.apply-for-an-overnight-commercial-vehicle
+    domain: parking-permits
+    parent_interaction: "Apply for an overnight commercial vehicle parking exemption"
+    tier: 1
+    status: stub
+  - id: parking.stub.request-a-review-of-a-parking
+    domain: parking-permits
+    parent_interaction: "Request a review of a parking permit application processing delay"
+    tier: 1
+    status: stub

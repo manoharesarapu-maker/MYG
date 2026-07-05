@@ -1,0 +1,90 @@
+# Aggregate metadata for the 16 service domains outside parking permits.
+# These counts (plus parking-permits' own 11 parent interactions / 53
+# decision branches) sum to the platform-wide 281 parent interactions /
+# 1,404 decision branches / 17 domains referenced in the taxonomy explorer.
+# None of these domains have working decision logic in this demo -- only
+# parking permits does. These are stub counts for demonstrating scale.
+parking_permits_totals:
+  parent_interactions: 11
+  decision_branches: 53
+domains:
+  - id: waste-and-recycling
+    label: "Waste & Recycling"
+    parent_interactions: 27
+    decision_branches: 135
+    status: stub
+  - id: rates-and-property
+    label: "Rates & Property"
+    parent_interactions: 30
+    decision_branches: 155
+    status: stub
+  - id: building-and-planning
+    label: "Building & Planning Permits"
+    parent_interactions: 25
+    decision_branches: 130
+    status: stub
+  - id: animal-management
+    label: "Animal Registration & Control"
+    parent_interactions: 14
+    decision_branches: 70
+    status: stub
+  - id: local-laws-and-compliance
+    label: "Local Laws & Compliance"
+    parent_interactions: 18
+    decision_branches: 90
+    status: stub
+  - id: community-grants-and-funding
+    label: "Community Grants & Funding"
+    parent_interactions: 12
+    decision_branches: 55
+    status: stub
+  - id: libraries-and-learning
+    label: "Libraries & Learning"
+    parent_interactions: 10
+    decision_branches: 45
+    status: stub
+  - id: aged-and-disability-services
+    label: "Aged & Disability Services"
+    parent_interactions: 19
+    decision_branches: 95
+    status: stub
+  - id: family-and-childrens-services
+    label: "Family & Children's Services"
+    parent_interactions: 17
+    decision_branches: 85
+    status: stub
+  - id: roads-and-footpaths
+    label: "Roads & Footpaths"
+    parent_interactions: 26
+    decision_branches: 133
+    status: stub
+  - id: environmental-health
+    label: "Environmental Health"
+    parent_interactions: 16
+    decision_branches: 80
+    status: stub
+  - id: events-and-venue-bookings
+    label: "Events & Venue Bookings"
+    parent_interactions: 13
+    decision_branches: 60
+    status: stub
+  - id: financial-hardship-and-concessions
+    label: "Financial Hardship & Concessions"
+    parent_interactions: 11
+    decision_branches: 58
+    status: stub
+  - id: trees-and-nature-strips
+    label: "Trees & Nature Strips"
+    parent_interactions: 9
+    decision_branches: 42
+    status: stub
+  - id: hard-rubbish-and-bin-requests
+    label: "Hard Rubbish & Bin Requests"
+    parent_interactions: 10
+    decision_branches: 48
+    status: stub
+  - id: customer-feedback-and-complaints
+    label: "Customer Feedback & Complaints"
+    parent_interactions: 13
+    decision_branches: 70
+    status: stub

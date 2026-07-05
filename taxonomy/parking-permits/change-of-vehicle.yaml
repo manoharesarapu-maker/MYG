@@ -1,0 +1,31 @@
+id: parking.change-of-vehicle
+domain: parking-permits
+parent_interaction: "Change the vehicle registered on an existing parking permit"
+tier: 1
+status: built
+requirements:
+  - id: existing_permit_number
+    label: "Existing permit number"
+    type: text
+    required: true
+  - id: address
+    label: "Address on the existing permit"
+    type: address
+    required: true
+  - id: old_vehicle_rego
+    label: "Registration number currently on the permit"
+    type: rego
+    required: true
+  - id: new_vehicle_rego
+    label: "Registration number of the new vehicle"
+    type: rego
+    required: true
+decision_logic:
+  - "If old_vehicle_rego and new_vehicle_rego are the same -> outcome: no_change_needed"
+  - "Otherwise -> outcome: approved_updated"
+outcomes:
+  approved_updated:
+    message_template: "Your permit has been updated to the new vehicle registration. No new payment is required for a vehicle change within the same permit term."
+  no_change_needed:
+    message_template: "The registration you've given matches what's already on the permit, so no change is needed."
+escalation: null

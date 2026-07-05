@@ -1,0 +1,25 @@
+id: parking.hardship-waiver
+domain: parking-permits
+parent_interaction: "Request a fee waiver or hardship consideration for a parking permit"
+tier: 0
+status: built
+requirements:
+  - id: applicant_name
+    label: "Full name"
+    type: text
+    required: true
+  - id: address
+    label: "Address"
+    type: address
+    required: true
+  - id: hardship_description
+    label: "Briefly, what's the situation you'd like the council to consider?"
+    type: text
+    required: true
+decision_logic:
+  - "Tier 0 interactions are never resolved automatically."
+  - "Any mention of hardship, financial difficulty, or an inability to pay -> outcome: escalated_to_human, regardless of any other detail captured"
+outcomes:
+  escalated_to_human:
+    message_template: "Thank you for letting us know. Requests involving financial hardship are handled personally by a council staff member rather than through automated processing — someone will be in touch with you directly to talk through options."
+escalation: "hardship_safeguarding"
