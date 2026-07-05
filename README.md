@@ -58,3 +58,20 @@ See `ARCHITECTURE.md` for the full data-flow diagram. Each top-level
 module (`taxonomy/`, `ingestion/`, `classifiers/`, `agents/`, `handoff/`,
 `governance/`, `telemetry/`, `services/`) has its own `SKILLS.md`
 describing what it does, what it must never do, and how to extend it.
+
+## `/how-it-works` — team visualization
+
+A separate, much lighter-weight route folded in from an earlier
+illustration-only scaffold. It shows one citizen request moving through
+three bands: **Guide** (live Claude API call), **Validator** (rule-based
+eligibility/triage check), and **Plus** (static, labeled "deferred"). See
+`app/how-it-works/page.tsx`.
+
+**This view is illustration only** — it shows the shape of the product,
+not the shape of the codebase the team will actually write, and it is
+entirely independent of the real Guide implementation above (it does not
+use the taxonomy, governance, or state machine in this repo). The parking
+cases it uses live in `lib/parking-placeholder-data.ts` and are explicitly
+flagged as placeholder — **not** the real 53-branch dataset built out
+under `taxonomy/parking-permits/`. Swap that file for a real dataset
+before using this view with anyone who might mistake it for real policy.

@@ -18,6 +18,9 @@ export default function AppHeader() {
         <a href="/explorer" className={pathname === "/explorer" ? "active" : ""}>
           Taxonomy explorer
         </a>
+        <a href="/how-it-works" className={pathname === "/how-it-works" ? "active" : ""}>
+          How it works
+        </a>
       </nav>
     </header>
   );
